@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <script
+      src="https://kit.fontawesome.com/0f210420b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Page</title>
+  </head>
+  <body>
+      <nav class="nav">
+        <div class="logo">
+          <img src="https://vizon.tech/media/logo.png" alt="logo" />
+        </div>
+
+        <!-- <label for="click" class="menu"><i class="fa-solid fa-bars"></i></label> -->
+
+        <ul class="list">
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Club</a></li>
+          <li><a href="#">Get in Touch</a></li>
+        </ul>
+        <label for="click" class="menu"
+          ><i class="fa-sharp fa-solid fa-bars"></i
+        ></label>
+      </nav>
+      <!-- ----------section------------- -->
+      <div class="home">
+        <h2 class="heading">Lorem Ipsum Dolor Sit Amet Consectur</h2>
+        <div class="card-container">
+          <div class="card" id="card1">
+            <div class="img-div">
+              <img src="https://vizon.tech/media/coding.png" />
+            </div>
+            <div class="card-content">
+              <h4>Cyber Squad</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <button>Interested</button>
+            </div>
+          </div>
+          <!-- - -->
+          <div class="card" id="card2">
+            <div class="img-div">
+              <img src="https://vizon.tech/media/coding.png" />
+            </div>
+            <div class="card-content">
+              <h4>Cyber Squad</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <button>Interested</button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="card" id="card3">
+            <div class="img-div">
+              <img src="https://vizon.tech/media/coding.png" />
+            </div>
+            <div class="card-content">
+              <h4>Cyber Squad</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <button>Interested</button>
+            </div>
+          </div>
+          <!-- ---- -->
+          <div class="card" id="card4">
+            <div class="img-div">
+              <img src="https://vizon.tech/media/coding.png" />
+            </div>
+            <div class="card-content">
+              <h4>Cyber Squad</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <button>Interested</button>
+            </div>
+          </div>
+          <!-- ---------- -->
+          <div class="card" id="card5">
+            <div class="img-div">
+              <img src="https://vizon.tech/media/coding.png" />
+            </div>
+            <div class="card-content">
+              <h4>Cyber Squad</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <button>Interested</button>
+            </div>
+          </div>
+          <!-- ----- -->
+          <div class="card" id="card6">
+            <div class="img-div">
+              <img src="https://vizon.tech/media/coding.png" />
+            </div>
+            <div class="card-content">
+              <h4>Cyber Squad</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <button>Interested</button>
+            </div>
+          </div>
+        </div>
+      
+    </section>
+    <script>
+      var cardCom = document.querySelectorAll(".card");
+      for (var i = 0; i < cardCom.length; i++) {
+        cardCom[i].addEventListener("mouseover", myFun);
+      }
+      function myFun(e) {
+        this.style.border = "3px solid blue";
+      }
+
+      for (var i = 0; i < cardCom.length; i++) {
+        cardCom[i].addEventListener("mouseout", removeFun);
+      }
+      function removeFun(e) {
+        this.style.border = "3px solid transparent";
+      }
+    </script>
+  </body>
+</html>
